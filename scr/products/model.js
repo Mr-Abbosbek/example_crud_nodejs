@@ -48,7 +48,7 @@ Products.addProducts = (productData, result) => {
 };
 Products.updateProducts = (id, productData, result) => {
   dbConn.query(
-    "UPDATE mahsulot_kirmi SET id=$1 mahsulot=$2, miqdori=$3, olchovi=$4, narxi=$5, olingan_vaqti=$6 WHERE id=$7",
+    "UPDATE mahsulot_kirmi SET id=$1, mahsulot=$2, miqdori=$3, olchovi=$4, narxi=$5, olingan_vaqti=$6 WHERE id=$7",
     [
       productData.id,
       productData.mahsulot,
