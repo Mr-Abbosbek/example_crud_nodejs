@@ -28,7 +28,7 @@ Products.getProductsId = (id, result) => {
 };
 Products.addProducts = (productData, result) => {
   dbConn.query(
-    "Insert into mahsulot_kirmiVALUES ($1, $2, $3, $4, $5)",
+    "Insert into mahsulot_kirmi VALUES ($1, $2, $3, $4, $5, $6)",
     [
       productData.id,
       productData.mahsulot,
